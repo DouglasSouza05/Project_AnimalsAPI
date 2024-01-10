@@ -1,19 +1,26 @@
+<!-- HTML -->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <AnimalsAPI text="Enter a Valid Animal Name"/>
 </template>
 
+<!-- JavaScript -->
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AnimalsAPI from "./components/AnimalsAPI.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    AnimalsAPI,
+  },
+  data() {
+    return {
+
+    }
   }
-}
+};
 </script>
 
+<!-- CSS -->
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
