@@ -1,6 +1,7 @@
 package animalsAPI;
 
 import java.io.IOException;
+import java.net.URLEncoder;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -18,27 +19,28 @@ public class AnimalsClient {
     public String getAnimalsAPI(String name) throws IOException {
 
         CloseableHttpClient httpClient = HttpClients.createDefault();
-        HttpGet httpGet = new HttpGet(apiUrl + name);
+        String encodedName = URLEncoder.encode(name, "UTF-8");
+        HttpGet httpGet = new HttpGet(apiUrl + encodedName);
         httpGet.setHeader("X-Api-Key", apiKey);
         CloseableHttpResponse animalsApiResponse = httpClient.execute(httpGet);
 
         try {
             if (animalsApiResponse.getStatusLine().toString().equals(statusCodeOk)) {
-                System.out.println("Status Code Ok...");
+                System.out.println("Status Code: ");
+                System.out.println(statusCodeOk);
                 HttpEntity entity = animalsApiResponse.getEntity();
-                // EntityUtils.consume(entity);
                 return EntityUtils.toString(entity);
             } else {
-                System.out.println("Status Code Not Ok...");
+                System.out.println("Status Code: ");
                 System.out.println(animalsApiResponse.getStatusLine().toString());
             }
-        } catch (ClientProtocolException exception) {
-            System.out.println("Exception Lançado... \n");
-            exception.printStackTrace();
+        } catch (ClientProtocolException e) {
+            System.out.println("Lançando Exception... \n");
+            e.printStackTrace();
         } finally {
             animalsApiResponse.close();
         }
 
-        return "";
+        return "[]";
     }
 }
