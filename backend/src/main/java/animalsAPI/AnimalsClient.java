@@ -28,11 +28,11 @@ public class AnimalsClient implements AnimalsService {
         try {
             if (animalsApiResponse.getStatusLine().toString().equals(statusCodeOk)) {
                 System.out.println("Status Code: ");
-                System.out.println(statusCodeOk);
+                System.out.println(statusCodeOk + "\n");
                 HttpEntity entity = animalsApiResponse.getEntity();
                 return EntityUtils.toString(entity);
             } else {
-                System.out.println("Status Code: ");
+                System.out.println("Status Code: " + "\n");
                 System.out.println(animalsApiResponse.getStatusLine().toString());
             }
         } catch (ClientProtocolException e) {
