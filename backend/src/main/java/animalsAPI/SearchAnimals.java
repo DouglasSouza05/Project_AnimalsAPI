@@ -4,14 +4,14 @@ import java.io.IOException;
 
 public class SearchAnimals {
 
-    private AnimalsClient animalsClient;
+    private AnimalsService animalsService;
 
-    public SearchAnimals(AnimalsClient animalsClient) {
-        this.animalsClient = animalsClient;
+    public SearchAnimals(AnimalsService animalsService) {
+        this.animalsService = animalsService;
     }
 
     public String searchAnimals(String name) throws IOException {
-        String clientApiResponse = animalsClient.getAnimalsAPI(name);
+        String clientApiResponse = animalsService.getAnimalsAPI(name);
         return clientApiResponse;
     }
 }
