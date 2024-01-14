@@ -20,7 +20,8 @@ public class TestSearchAnimals {
     @Before
     public void setup() {
         // Criando o contexo do meu teste com o MOCK (SERVIÇO MOCK)
-        animalsService = new MockAnimalsService();
+        // animalsService = new MockAnimalsService();
+        animalsService = new AnimalsClient();
         search = new SearchAnimals(animalsService);
     }
 

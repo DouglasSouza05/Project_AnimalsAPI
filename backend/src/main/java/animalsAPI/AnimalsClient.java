@@ -10,12 +10,13 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
-public class AnimalsClient {
+public class AnimalsClient implements AnimalsService {
 
     public final String apiUrl = "https://api.api-ninjas.com/v1/animals?name=";
     public final String apiKey = "1/fQglp/19H5bdDx+vFf7A==xKa6MhH3R9bpA86q";
     String statusCodeOk = "HTTP/1.1 200 OK";
 
+    @Override
     public String getAnimalsAPI(String name) throws IOException {
 
         CloseableHttpClient httpClient = HttpClients.createDefault();
