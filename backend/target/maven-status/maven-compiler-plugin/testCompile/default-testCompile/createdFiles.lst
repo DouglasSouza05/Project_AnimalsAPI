@@ -1,1 +1,3 @@
-animalsAPI\AppTest.class
+animalsAPI\MockAnimalsService.class
+animalsAPI\AnimalsConst.class
+animalsAPI\TestSearchAnimals.class

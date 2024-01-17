@@ -70,16 +70,17 @@ export default {
       message: "",
       visibleDiv: false,
       visibleError: false,
+      animalInfo: null,
     };
   },
   methods: {
     submitForm() {
-      if (this.message.trim() !== "") {
-          this.visibleDiv = true;
-          this.visibleError = false;
+      if (this.message.trim() != "") {
+        this.visibleDiv = true;
+        this.visibleError = false;
       } else {
-          this.visibleDiv = false;
-          this.visibleError = true;
+        this.visibleDiv = false;
+        this.visibleError = true;
       }
     },
   },
@@ -99,8 +100,8 @@ export default {
 #buttonForm {
   padding: 10px 15px;
   margin: 5px;
-  background-color: #4caf50; /* Cor de fundo verde, você pode ajustar conforme necessário */
-  color: white; /* Cor do texto branco */
+  background-color: #4caf50;
+  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -108,16 +109,16 @@ export default {
 }
 .columns {
   display: flex;
-  justify-content: center; /* centralizar horizontalmente */
+  justify-content: center;
 }
 .column {
-  margin: 0 100px; /* adiciona margem apenas na parte horizontal */
+  margin: 0 100px;
   text-align: left;
 }
 h3 {
   font-size: 25px;
 }
 h4 {
-    font-size: 20px;
+  font-size: 20px;
 }
 </style>

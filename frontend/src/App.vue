@@ -1,6 +1,6 @@
 <!-- HTML -->
 <template>
-  <AnimalsAPI text="Enter a Valid Animal Name"/>
+  <AnimalsAPI text="Enter With an Animal Name" />
 </template>
 
 <!-- JavaScript -->
@@ -13,10 +13,8 @@ export default {
     AnimalsAPI,
   },
   data() {
-    return {
-
-    }
-  }
+    return {};
+  },
 };
 </script>
 
