@@ -1,1 +1,22 @@
+name: Java Maven CI/CD
 
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set Up JDK and Maven
+        uses: actions/setup-java@v3
+        with:
+          java-version: "17"
+          maven-version: "3.9.5"
+
+      - name: Build and Test
+        run: |
+          cd backend
+          mvn clean install

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="animalsAPI.TestSearchAnimals" time="0.218" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="animalsAPI.TestSearchAnimals" time="0.205" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="D:\JAVA\bin"/>
-    <property name="sun.java.command" value="C:\Users\Douglas\AppData\Local\Temp\surefire3978386103301305883\surefirebooter-20240117114014352_3.jar C:\Users\Douglas\AppData\Local\Temp\surefire3978386103301305883 2024-01-17T11-40-14_048-jvmRun1 surefire-20240117114014352_1tmp surefire_0-20240117114014352_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Douglas\AppData\Local\Temp\surefire15423041909125165953\surefirebooter-20240117122643829_3.jar C:\Users\Douglas\AppData\Local\Temp\surefire15423041909125165953 2024-01-17T12-26-43_492-jvmRun1 surefire-20240117122643829_1tmp surefire_0-20240117122643829_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Douglas\Desktop\DouglasADM\Inatel\Project_AnimalsAPI\backend\target\test-classes;C:\Users\Douglas\Desktop\DouglasADM\Inatel\Project_AnimalsAPI\backend\target\classes;C:\Users\Douglas\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\Douglas\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\Douglas\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Douglas\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Douglas\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Douglas\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Douglas\.m2\repository\com\google\code\gson\gson\2.8.8\gson-2.8.8.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Douglas\AppData\Local\Temp\surefire3978386103301305883\surefirebooter-20240117114014352_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Douglas\AppData\Local\Temp\surefire15423041909125165953\surefirebooter-20240117122643829_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17+35-LTS-2724"/>
@@ -56,12 +56,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testSearchKangarooRatTaxonomy" classname="animalsAPI.TestSearchAnimals" time="0.085"/>
+  <testcase name="testSearchKangarooRatTaxonomy" classname="animalsAPI.TestSearchAnimals" time="0.059"/>
   <testcase name="testSearchTreeKangarooTaxonomy" classname="animalsAPI.TestSearchAnimals" time="0.0"/>
   <testcase name="testSearchCheetah" classname="animalsAPI.TestSearchAnimals" time="0.0"/>
-  <testcase name="testSearchCheetahTaxonomy" classname="animalsAPI.TestSearchAnimals" time="0.001"/>
-  <testcase name="testSearchKangarooTaxonomy" classname="animalsAPI.TestSearchAnimals" time="0.001"/>
-  <testcase name="testSearchKangarooRat" classname="animalsAPI.TestSearchAnimals" time="0.002"/>
-  <testcase name="testSearchTreeKangaroo" classname="animalsAPI.TestSearchAnimals" time="0.003"/>
-  <testcase name="testSearchKangaroo" classname="animalsAPI.TestSearchAnimals" time="0.0"/>
+  <testcase name="testSearchCheetahTaxonomy" classname="animalsAPI.TestSearchAnimals" time="0.004"/>
+  <testcase name="testSearchKangarooTaxonomy" classname="animalsAPI.TestSearchAnimals" time="0.0"/>
+  <testcase name="testSearchKangarooRat" classname="animalsAPI.TestSearchAnimals" time="0.0"/>
+  <testcase name="testSearchTreeKangaroo" classname="animalsAPI.TestSearchAnimals" time="0.014"/>
+  <testcase name="testSearchKangaroo" classname="animalsAPI.TestSearchAnimals" time="0.002"/>
 </testsuite>
