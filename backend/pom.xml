@@ -13,14 +13,14 @@
     <java.version>17</java.version> <!-- Versão do Java desejada -->
   </properties>
 
-  <build>
+  <!-- <build>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
     </plugins>
-  </build>
+  </build> -->
 
   <dependencies>
 
